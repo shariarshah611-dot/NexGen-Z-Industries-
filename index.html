@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexgen-Z | Premium Mini Electric</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="announcement-bar">
+    <div class="slider-text-container">
+        <span class="slide-text">🎉 Welcome to Nexgen-Z - Future of Tech is Here!</span>
+        <span class="slide-text">🚀 Free Worldwide Shipping on orders over $100!</span>
+        <span class="slide-text">⚡ Limited Edition Nano Charge is now available!</span>
+    </div>
+    </div>
+    
+    <nav class="navbar">
+    <div class="search-container" id="searchContainer">
+        <div class="search-icon" onclick="toggleSearch()">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </div>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search...">
+    </div>
+
+    <div class="logo">NEXGEN-<span>Z</span></div>
+    
+    <div class="nav-scroll-container">
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+    </div>
+    
+    <button class="nav-btn">Shop Now</button>
+</nav>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <span class="badge">New Launch 2026</span>
+            <h1>Pocket Power.<br><span class="accent-text">Minimal Design.</span></h1>
+            <p>The world's smallest high-performance electric devices, reimagined for your daily life.</p>
+            <div class="hero-btns">
+                <button class="btn-dark">Pre-order Now</button>
+                <button class="btn-light"><a href="#products">EXPLORE</a></button>
+            </div>
+        </div>
+    </header>
+
+    <section id="products" class="product-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Lineup</h2>
+                <p>Small in size, massive in performance.</p>
+            </div>
+   
+                
+            <div class="product-grid">
+                <div class="product-card" onclick="showDetails('Turbo Fan Z', '32.00', 'p1.jpg')">
+                    <div class="p-img">
+                        <img src="p1.jpg" alt="Product">
+                    </div>
+                    <div class="p-info">
+                        <h3>Turbo Fan Z</h3>
+                        <p>3-speed silent cooling.</p>
+                        <div class="p-footer">
+                            <span class="price">$32.00</span>
+                            <button class="add-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" onclick="showDetails('Turbo Fan Z', '32.00', 'p1.jpg')">
+                    <div class="p-img">
+                        <img src="p1.jpg" alt="Product">
+                    </div>
+                    <div class="p-info">
+                        <h3>Turbo Fan Z</h3>
+                        <p>3-speed silent cooling.</p>
+                        <div class="p-footer">
+                            <span class="price">$32.00</span>
+                            <button class="add-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" onclick="showDetails('Turbo Fan Z', '32.00', 'p1.jpg')">
+                    <div class="p-img">
+                        <img src="p1.jpg" alt="Product">
+                    </div>
+                    <div class="p-info">
+                        <h3>Turbo Fan Z</h3>
+                        <p>3-speed silent cooling.</p>
+                        <div class="p-footer">
+                            <span class="price">$32.00</span>
+                            <button class="add-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" onclick="showDetails('Pikobot', '10', 'p1.jpg')">
+                    <div class="p-img">
+                        <img src="p1.jpg" alt="Product">
+                    </div>
+                    <div class="p-info">
+                        <h3>Pikobot</h3>
+                        <p>your Ai Assistant</p>
+                        <div class="p-footer">
+                            <span class="price">$10.00</span>
+                            <button class="add-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="container-small">
+            <h2 class="section-title">Common Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4><i class="fas fa-shipping-fast"></i> Worldwide Shipping?</h4>
+                    <p>Yes, we deliver Nexgen-Z products globally within 5-7 business days.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-shield-alt"></i> Warranty Policy?</h4>
+                    <p>Every device comes with a 12-month full replacement warranty.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="settings" class="settings-section">
+        <div class="settings-card">
+            <i class="fas fa-sliders-h icon-big"></i>
+            <h3>Device Control</h3>
+            <p>Connect your Nexgen-Z via Bluetooth to customize power modes and RGB lighting.</p>
+            <button class="btn-dark">Open App Dashboard</button>
+        </div>
+    </section>
+    
+    <div id="product-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div class="modal-body">
+            <div class="modal-img">
+                <img id="modal-img-src" src="" alt="Product Image">
+            </div>
+            <div class="modal-info">
+                <h2 id="modal-title"></h2>
+                <p id="modal-price" class="price-large"></p>
+                <p>Experience the ultimate power in a compact form. Premium build quality with Nexgen-Z standards.</p>
+                
+                <div class="quantity-selector">
+                    <label>Quantity:</label>
+                    <input type="number" id="prod-qty" value="1" min="1">
+                </div>
+                
+                <button onclick="showForm()" class="btn-dark buy-btn">Proceed to Buy</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<section id="order-form" class="form-section" style="display: none;">
+    <div class="form-container">
+        <h3 style="margin-bottom: 20px; text-align: center;">Confirm Your Order</h3>
+        <form id="whatsapp-form">
+            <input type="text" id="cust-name" placeholder="Full Name" required>
+            <input type="text" id="cust-address" placeholder="Shipping Address" required>
+            <input type="tel" id="cust-phone" placeholder="WhatsApp Number" required>
+            
+            <div class="payment-selection">
+                <label>Select Payment Method:</label>
+                <div class="pay-options">
+                    <label><input type="radio" name="payment" value="bKash" checked> bKash</label>
+                    <label><input type="radio" name="payment" value="Nagad"> Nagad</label>
+                    <label><input type="radio" name="payment" value="COD"> COD</label>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn-dark" style="width: 100%; padding: 15px;">Confirm Order</button>
+            <button type="button" onclick="closeForm()" class="btn-light" style="width: 100%; margin-top: 10px; margin-left: 0;">Cancel</button>
+        </form>
+    </div>
+</section>
+
+
+    <footer class="big-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <div class="logo">NEXGEN-<span>Z</span></div>
+            <p>Crafting the world's smallest high-performance electric devices since 2024.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1CPC4NFAEh/"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#settings">Support</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-newsletter">
+            <h4>Stay Updated</h4>
+            <p>Subscribe to get special offers and first look at new tech.</p>
+            <div class="subscribe-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Join</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="copy">&copy; 2026 Nexgen-Z Industries. All Rights Reserved. Designed for the Future.</p>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
